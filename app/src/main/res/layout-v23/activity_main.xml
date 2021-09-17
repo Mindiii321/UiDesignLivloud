@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginSignupActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_above"
+        android:layout_width="match_parent"
+        android:layout_height="448dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:dotsColor="@android:color/holo_green_light"
+            app:dotsSize="15dp"
+            app:dotsSpacing="5dp"
+            app:progressMode="true"
+            app:selectedDotColor="@android:color/holo_green_dark" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/linear_above"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:drawableTint="@color/green"
+            android:text="@string/signup"
+            app:cornerRadius="16dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="1"
+            android:backgroundTint="#5BAF5E"
+            android:text="@string/log_in"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_Guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="@string/continue_as_guest"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20sp"
+        tools:ignore="TextViewEdits" />
+
+    <LinearLayout
+        android:id="@+id/view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_Guest"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="186dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="#787575" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:text="@string/or"
+            android:textColor="#504F4F"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="186dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="#787575" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearIcon"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/google_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/ico_google"
+            android:inputType="text"
+            android:text="@string/google"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:cornerRadius="4dp"
+            tools:ignore="TextViewEdits" />
+
+        <Button
+            android:id="@+id/facebook_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/face"
+            android:text="@string/facebook"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:cornerRadius="4dp" />
+    </LinearLayout>
+
+</RelativeLayout>

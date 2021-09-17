@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DialogBoxActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/background"
+        android:elevation="50dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/bg_gradient"
+            android:src="@drawable/ic_baseline_close_24">
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_gradient"
+                android:src="@drawable/ic_baseline_close_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:text="forgot password?"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@android:dimen/app_icon_size"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/email"
+            android:drawableTint="@color/green"
+            android:hint="Email"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="@color/green"
+            android:inputType="text"
+            android:text="@string/submit"
+            app:cornerRadius="16dp"
+            tools:ignore="TextViewEdits" />
+
+
+    </LinearLayout>
+</RelativeLayout>

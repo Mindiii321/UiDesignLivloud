@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+    <TextView
+        android:id="@+id/tvSecure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:text="    Create Account"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/previous_screen"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back_arrow" />
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@android:dimen/app_icon_size"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/email"
+            android:drawableTint="#2196F3"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="30dp"
+            android:drawableStart="@drawable/lock"
+            android:drawableTint="#2196F3"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_ac_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginHorizontal="30dp"
+        android:layout_weight="1"
+        android:backgroundTint="#5BAF5E"
+        android:text="Create Account"
+        android:inputType="text"
+        app:cornerRadius="16dp" />
+
+</RelativeLayout>

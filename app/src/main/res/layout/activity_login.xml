@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/tvSecure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="40dp"
+        android:text="Secure Log In"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+
+    <ImageView
+        android:id="@+id/previous_screen"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/back_arrow" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edittext_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@android:dimen/app_icon_size"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:drawableStart="@drawable/email"
+            android:drawableTint="@color/green"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="30dp"
+            android:drawableStart="@drawable/lock"
+            android:drawableTint="@color/green"
+            android:textColor="@color/design_default_color_primary_variant"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/forgot_pass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:layout_marginHorizontal="30dp"
+        android:backgroundTint="@color/green"
+        android:inputType="text"
+        android:text="@string/login"
+        app:cornerRadius="16dp"
+        tools:ignore="TextViewEdits" />
+
+</RelativeLayout>
